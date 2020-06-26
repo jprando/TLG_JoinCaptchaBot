@@ -3,7 +3,7 @@
         "Olá, eu sou um Bot que envia um captcha de imagem para cada novo usuário que entra no grupo e expulsa aquele que não enviar o captcha no tempo definido.\n\nSe um usuário tentar entrar no grupo 5 vezes sem enviar o captcha corretamente, vou presumir que esse \"usuário\" é um Bot, e ele será banido. Também, qualquer mensagem que contenha um URL que tenha sido enviado por um novo \"usuário\" antes da conclusão do captcha, será considerada Spam e será excluída.\n\nLembre-se de dar privilégios de administrador para que eu possa expulsar-banir usuários e excluir mensagens do grupo.\n\nConfira o comando /help para saber mais sobre como me usar.\n\nEu sou útil? Confira o comando /about e considere fazer uma doação para me manter ativo.",
 
     "HELP":
-        "Ajuda do Bot:\n————————————————\n- Eu sou um Bot que envia um captcha para cada novo usuário que entra no grupo e expulsa aquele que não enviar o captcha no tempo definido.\n\n- Se um usuário tentar entrar no grupo 5 vezes sem enviar o captcha corretamente, vou presumir que esse “usuário” é um Bot, e ele será banido.\n\n- Qualquer mensagem que contenha um URL que tenha sido enviado por um novo \"usuário\" antes da conclusão do captcha, será considerada Spam e será excluída.\n\n- Você tem que me dar privilégios de administrador para que eu possa expulsar e banir usuários, e remover mensagens.\n\n- Para manter o grupo limpo, eu removo automaticamente todas as mensagens relacionadas a mim quando um captcha não é enviado e o usuário é expulso (depois de 5 minutos).\n\n- O tempo de espera para que o usuário envie o captcha é de 5 minutos, mas ele pode ser configurado usando o comando /time.\n\n- Você pode ativar ou desativar a proteção captcha usando os comandos /enable e /disable.\n\n- Comandos de configuração somente podem ser usados pelos Administradores do grupo.\n\n- Você pode definir o idioma que eu falo usando o comando /language.\n\n- Você pode configurar o grau de dificuldade do captcha usando a opção /difficulty.\n\nVocê pode definir se o captcha terá apenas números (o padrão) ou números e letras, usando a opção /captcha_mode.\n\n- Você pode configurar uma mensagem de boas-vindas personalizada com o comando /welcome_msg.\n\n- Use a opção /commands para ver a lista de todos os comandos com uma breve descrição de cada um deles.",
+        "Ajuda do Bot:\n————————————————\n- Eu sou um Bot que envia um captcha para cada novo usuário que entra no grupo e expulsa aquele que não enviar o captcha no tempo definido.\n\n- Se um usuário tentar entrar no grupo 5 vezes sem enviar o captcha corretamente, vou presumir que esse “usuário” é um Bot, e ele será banido.\n\n- Qualquer mensagem que contenha um URL que tenha sido enviado por um novo \"usuário\" antes da conclusão do captcha, será considerada Spam e será excluída.\n\n- Você tem que me dar privilégios de administrador para que eu possa expulsar e banir usuários, e remover mensagens.\n\n- Para manter o grupo limpo, eu removo automaticamente todas as mensagens relacionadas a mim quando um captcha não é enviado e o usuário é removido do grupo (depois de 5 minutos).\n\n- O tempo de espera para que o usuário envie o captcha é de 5 minutos, mas ele pode ser configurado usando o comando /time.\n\n- Você pode ativar ou desativar a proteção captcha usando os comandos /enable e /disable.\n\n- Comandos de configuração somente podem ser usados pelos Administradores do grupo.\n\n- Você pode definir o idioma que eu falo usando o comando /language.\n\n- Você pode configurar o grau de dificuldade do captcha usando a opção /difficulty.\n\nVocê pode definir se o captcha terá apenas números (o padrão) ou números e letras, usando a opção /captcha_mode.\n\n- Você pode configurar uma mensagem de boas-vindas personalizada com o comando /welcome_msg.\n\n- Use a opção /commands para ver a lista de todos os comandos com uma breve descrição de cada um deles.",
 
     "CMD_NOT_ALLOW":
         "Apenas um Admin pode usar esse comando",
@@ -96,7 +96,7 @@
         "Lista de ignorados do chat está vazia.",
 
     "NEW_USER_CAPTCHA_CAPTION":
-        "Olá {}, seja bem-vindo ao {}. Por favor envie uma mensagem com o número que aparece neste captcha para que possamos nos certificar que você é humano. Se você não enviar o captcha em {} minutos, você será automaticamente expulso do grupo. Se houver letras, maiúsculo e minúsculo faz diferença.",
+        "Olá {}, seja bem-vindo ao {}. Por favor envie uma mensagem com o número que aparece neste captcha para que possamos nos certificar que você é humano. Se você não enviar o captcha em {} minutos, você será automaticamente removido do grupo. Se houver letras, maiúsculo e minúsculo faz diferença.",
 
     "CAPTCHA_SOLVED":
         "Captcha enviado, usuário verificado.\nSeja bem-vindo ao grupo {}",
@@ -108,13 +108,13 @@
         "Esse não é o número correto. Olhe com atenção pois o captcha tem 4 números...",
 
     "NEW_USER_KICK":
-        "{} não enviou o captcha em tempo hábil. O \"Usuário\" foi expulso.",
+        "{} não enviou o captcha em tempo hábil. O \"Usuário\" foi removido.",
 
     "NEW_USER_KICK_NOT_RIGHTS":
         "{} não completou o captcha em tempo. Eu tentei expulsar o \"usuário\", mas eu não tenho poderes administrativos para expulsar usuários do grupo.",
 
     "NEW_USER_KICK_NOT_IN_CHAT":
-        "{} não completou o captcha em tempo. Eu tentei expulsar o \"usuário\", mas o usuário não está mais no grupo (ele saiu ou foi expulso por um Admin).",
+        "{} não completou o captcha em tempo. Eu tentei expulsar o \"usuário\", mas o usuário não está mais no grupo (ele saiu ou foi removido por um Admin).",
 
     "BOT_CANT_KICK":
         "{} não completou o captcha em tempo. Eu tentei expulsar o \"usuário\", mas algo deu errado (talvez algo relacionado à rede ou servidor). Não pude fazê-lo.",
@@ -126,7 +126,7 @@
         "Alerta: Esta é a quinta vez que {} tenta entrar no grupo e falha ao enviar o captcha. O \"usuário\" foi banido. Para deixá-lo entrar de novo, um administrador tem que remover as restrições, manualmente..",
 
     "NEW_USER_BAN_NOT_IN_CHAT":
-        "Alerta: Esta é a quinta vez que {} tenta entrar no grupo e falha ao enviar o captcha. Eu tentei banir o \"usuário\", mas ele não está mais no grupo (ele saiu ou foi expulso por um Admin).",
+        "Alerta: Esta é a quinta vez que {} tenta entrar no grupo e falha ao enviar o captcha. Eu tentei banir o \"usuário\", mas ele não está mais no grupo (ele saiu ou foi removido por um Admin).",
 
     "NEW_USER_BAN_NOT_RIGHTS":
         "Alerta: Esta é a quinta vez que {} tenta entrar no grupo e falha ao enviar o captcha. Eu tentei banir o \"usuário\", mas eu não tenho poderes administrativos para banir usuários do grupo.",
